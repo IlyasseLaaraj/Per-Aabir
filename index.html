@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Per Aabir ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+   body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-image: url('./flower-background_1066938-708.avif');
+      background-size: cover; /* copre tutto lo schermo */
+      background-position: center center; /* centra l'immagine */
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; 
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      }
+
+ .card {
+  background-color: #fffaf7;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  max-width: 90vw;     
+  max-height: 70vh;
+  overflow-y: auto;
+  text-align: left;
+  padding-right: 1rem;
+  position: relative;
+  z-index: 1;
+  display: none;
+  margin: 1rem auto;    /* per centrare e avere margine sui lati */
+}
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #d17b93;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4b2c2c;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .petal1 {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image: url('./rose.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: fall linear infinite;
+      opacity: 0.8;
+      pointer-events: none;
+      top: -50px;
+    }
+
+        .petal2 {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image: url('./sunflower.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: fall linear infinite;
+      opacity: 0.8;
+      pointer-events: none;
+      top: -50px;
+    }
+
+        .petal3 {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image: url('./rose\ \(1\).png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: fall linear infinite;
+      opacity: 0.8;
+      pointer-events: none;
+      top: -50px;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+      10% { opacity: 0.9; }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .start-btn {
+      position: absolute;
+      z-index: 10;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #f7c6d3;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+
+    .start-btn:hover {
+      background-color: #f59cb5;
+    }
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 95vw;  /* quasi tutta la larghezza */
+    padding: 1rem;
+    max-height: 80vh;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .start-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 320px;
+    position: fixed;
+  }
+}
+
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% { opacity: 0.9; }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+  </style>
+</head>
+<body>
+  <button class="start-btn" onclick="startExperience()">Clicca qui per leggere il tuo messaggio 💌</button>
+
+  <audio id="music" loop>
+    <source src="./videoplayback.weba" type="audio/webm">
+    Il tuo browser non supporta l'audio.
+  </audio>
+
+<div class="card" id="messageCard" style="max-width:600px; margin:auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6; color:#333; background:#fff8f0; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <h1 style="text-align:center; color:#b85c5c; margin-bottom: 20px;">Per Aabir ❤️</h1>
+  <p>
+    Amore mio,<br><br>
+
+    Se stai leggendo queste parole, forse è mattina, e io spero con tutto il cuore che i tuoi occhi si siano appena aperti<br>
+    portando un po’ di luce nuova, calda e dolce, dentro di te.<br><br>
+
+    Volevo scriverti qualcosa di vero, semplice e profondo, perché a voce a volte mi perdo, inciampo,<br>
+    e le emozioni mi travolgono. Ma stanotte, con il cuore calmo e pieno d’amore,<br>
+    voglio parlarti da uomo che ti ama davvero, che ti sceglie ogni giorno,<br>
+    e che tra pochi giorni, <em>inchallah</em>, sarà tuo marito davanti ad Allah.<br><br>
+
+    So che dentro di te ci sono ferite che nessuno ha mai visto,<br>
+    e che spesso i tuoi pensieri corrono veloci, troppo veloci, fino a farti sentire confusa e stanca.<br>
+    So anche che quando succede, a volte perdi quella dolce femminilità che amo tanto,<br>
+    e ti chiudi o mi attacchi perché ti senti fragile.<br>
+    Io, invece, a volte mi chiudo anch’io, o parlo tanto per trovare subito una soluzione,<br>
+    e quando non riesco a capirti come vorrei, la rabbia prende il posto dell’amore.<br>
+    So di aver detto parole che ti hanno fatto male, e per questo ti chiedo scusa con tutto il cuore.<br>
+    <strong>Non è colpa tua, né mia, siamo solo due cuori imperfetti che stanno imparando a volersi bene davvero.</strong><br><br>
+
+    La nostra forza è la fede che condividiamo, l’Islam, e il fatto che abbiamo entrambi cicatrici<br>
+    che il tempo non ha ancora guarito. Ma ti amo proprio per questo: per le tue fragilità, i tuoi difetti,<br>
+    e per la bellezza autentica che solo tu hai. E <em>inchallah</em>, insieme, passo dopo passo, diventeremo migliori.<br><br>
+
+    Litigheremo ancora, lo so. Perché nessuno di noi è perfetto,<br>
+    e Allah vuole che impariamo da ogni errore, da ogni parola non detta, da ogni lacrima.<br>
+    Ti prometto che nei momenti difficili cercherò di fermarmi, di ascoltarti con tutto il mio cuore,<br>
+    di non lasciarmi travolgere dalla rabbia o dall’orgoglio.<br>
+    So che anche tu farai lo stesso. Questo è il nostro patto d’amore:<br>
+    <strong>crescere insieme, con pazienza e con la forza che solo l’amore vero può dare.</strong><br><br>
+
+    Tu sei la mia scelta, sempre.<br>
+    Con tutte le tue emozioni, i tuoi pensieri profondi,<br>
+    e quel cuore grande che mi fa sentire il più fortunato degli uomini.<br>
+    Sei il mio dono più bello, la mia benedizione, anche quando i giorni sono difficili.<br><br>
+
+    Ricordo ogni tuo sorriso, ogni piccolo gesto, ogni regalo e pensiero<br>
+    che mi hai donato con amore. Sono quei momenti che illuminano la nostra strada e riempiono la mia anima.<br><br>
+
+    Abbiamo vissuto gioie e lacrime, e va bene così.<br>
+    Credo con tutto me stesso che Allah ci ha messi uno accanto all’altra<br>
+    per essere il conforto e la forza che da soli non potremmo mai trovare.<br>
+    Siamo due metà che si cercano, si proteggono, si amano anche quando fa male.<br><br>
+
+    Voglio essere il rifugio dove la tua mente si sente serena<br>
+    e il tuo cuore respira leggero.<br>
+    Ricorda sempre: <strong>non sei mai sola, nemmeno nei silenzi e nei pensieri nascosti.</strong><br><br>
+
+    Tra venti giorni, <em>inchallah</em>, sarai mia moglie.<br>
+    Ma per me sei già la mia casa, il mio posto più bello.<br><br>
+
+    Ti amo con tutta la mia anima.<br>
+    Ogni giorno proverò a dimostrarti questo amore con più dolcezza, pazienza e cura.<br><br>
+
+    Che Allah ci guidi, ci protegga e ci unisca sempre.<br><br>
+
+    Ora, mentre leggi queste parole, spero che senta solo pace e amore dentro di te.<br><br>
+
+    <strong>Tuo per sempre, con tutto il cuore. ❤️</strong>
+  </p>
+</div>
+
+
+  <script>
+function startExperience() {
+  document.querySelector('.start-btn').style.display = 'none';
+  const card = document.getElementById('messageCard');
+  card.style.display = 'block';
+  card.style.textAlign = 'left';  // più leggibile su mobile
+
+  const music = document.getElementById('music');
+  music.volume = 0.3;
+  music.play();
+
+  // Creazione petali - usa i numeri giusti
+  const numPetals1 = 25;
+  for (let i = 0; i < numPetals1; i++) {
+    const petal = document.createElement('div');
+    petal.classList.add('petal1');
+    petal.style.left = Math.random() * 100 + 'vw';
+    petal.style.animationDuration = (5 + Math.random() * 5) + 's';
+    petal.style.animationDelay = Math.random() * 10 + 's';
+    document.body.appendChild(petal);
+  }
+
+  const numPetals2 = 5;
+  for (let i = 0; i < numPetals2; i++) {
+    const petal = document.createElement('div');
+    petal.classList.add('petal2');
+    petal.style.left = Math.random() * 100 + 'vw';
+    petal.style.animationDuration = (5 + Math.random() * 5) + 's';
+    petal.style.animationDelay = Math.random() * 10 + 's';
+    document.body.appendChild(petal);
+  }
+
+  const numPetals3 = 5;
+  for (let i = 0; i < numPetals3; i++) {
+    const petal = document.createElement('div');
+    petal.classList.add('petal3');
+    petal.style.left = Math.random() * 100 + 'vw';
+    petal.style.animationDuration = (5 + Math.random() * 5) + 's';
+    petal.style.animationDelay = Math.random() * 10 + 's';
+    document.body.appendChild(petal);
+  }
+}
+  </script>
+</body>
+</html>
